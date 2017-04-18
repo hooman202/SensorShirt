@@ -45,10 +45,10 @@ namespace SensorShirt
                 var sensorData = _serialPort.ReadLine().ToString().Split('-');
                 if (sensorData.Length != 8)
                     return;
-                var sensor1 = (float)(1+((int.Parse(sensorData[0]))/-600.0));
-                var sensor2 = (float)(1+((int.Parse(sensorData[1]))/-600.0));
-                var sensor3 = (float)(1+((int.Parse(sensorData[2]))/-600.0));
-                var sensor4 = (float)(1+((int.Parse(sensorData[3]))/-600.0));
+                var sensor1 = (float)(1+((int.Parse(sensorData[0]))/-300.0));
+                var sensor2 = (float)(1+((int.Parse(sensorData[1]))/-200.0));
+                var sensor3 = (float)(1+((int.Parse(sensorData[2]))/-300.0));
+                var sensor4 = (float)(1+((int.Parse(sensorData[3]))/-300.0));
                 var sensor5 = (float)(1+((int.Parse(sensorData[4]))/-600.0));
                 var sensor6 = (float)(1+((int.Parse(sensorData[5]))/-600.0));
                 var sensor7 = (float)(1+((int.Parse(sensorData[6]))/-600.0));
